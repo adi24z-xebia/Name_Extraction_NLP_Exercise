@@ -10,7 +10,6 @@ def preprocess_text(text: str) -> str:
     Preserve punctuation, capitalization, initials,
     mentions and message boundaries.
     """
-
     if not text:
         return ""
 
