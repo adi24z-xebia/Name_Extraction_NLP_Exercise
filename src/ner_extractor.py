@@ -3,13 +3,11 @@ import spacy
 
 from src.config import ENGLISH_MODEL
 from src.preprocessing import preprocess_text
+from src.candidate_cleanup import clean_person_candidate
 
 
 def load_nlp_model():
-    """
-    Load the NLP model once and reuse it.
-    """
-
+    """Load the spaCy model once and reuse it."""
     try:
         return spacy.load(ENGLISH_MODEL)
 
@@ -28,7 +26,6 @@ def extract_entities(text: str, nlp):
     Returns candidate entities with their labels
     and positions in the processed text.
     """
-
     cleaned_text = preprocess_text(text)
 
     if not cleaned_text:
@@ -36,31 +33,41 @@ def extract_entities(text: str, nlp):
 
     doc = nlp(cleaned_text)
 
-    entities = []
-
-    for entity in doc.ents:
-        entities.append({
+    return [
+        {
             "text": entity.text,
             "label": entity.label_,
             "start": entity.start_char,
             "end": entity.end_char,
-        })
-
-    return entities
+        }
+        for entity in doc.ents
+    ]
 
 
 def extract_person_candidates(text: str, nlp):
-    """
-    Return entities classified as PERSON.
-    """
-
+    """Return cleaned entities classified as PERSON."""
     entities = extract_entities(text, nlp)
 
-    return [
-        entity["text"]
-        for entity in entities
-        if entity["label"] == "PERSON"
-    ]
+    candidates = []
+    seen = set()
+
+    for entity in entities:
+        if entity["label"] != "PERSON":
+            continue
+
+        candidate = clean_person_candidate(entity["text"])
+
+        if not candidate:
+            continue
+
+        # Case-insensitive deduplication, preserving first occurrence.
+        key = candidate.casefold()
+
+        if key not in seen:
+            seen.add(key)
+            candidates.append(candidate)
+
+    return candidates
 
 
 def extract_entities_batch(texts, nlp, batch_size=100):
@@ -68,14 +75,13 @@ def extract_entities_batch(texts, nlp, batch_size=100):
     Process multiple messages efficiently using spaCy's
     pipeline batching mechanism.
     """
-
     cleaned_texts = (
         preprocess_text(text) for text in texts
     )
 
     for doc in nlp.pipe(
         cleaned_texts,
-        batch_size=batch_size
+        batch_size=batch_size,
     ):
         yield [
             {
