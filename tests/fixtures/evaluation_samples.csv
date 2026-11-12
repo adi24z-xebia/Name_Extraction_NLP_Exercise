@@ -1,0 +1,97 @@
+﻿
+ID,data,expected_names
+8611770,"Dear Laura:
+
+Invoice 33101 is attached for $12,400.
+Btw, I'd rather wait for CA Amit Verma to return from Vasco da Gama before deciding.
+Justice Verma owes me the Project Orion estimates.
+
+Regards,
+Finance Team","[""Laura"", ""Amit Verma""]"
+9726250,"Capt. Brooks & Sameer,
+We lost Rs 12 crore because nobody told Prakash Kulkarni about the cutover. Send my regards to everyone at Bajaj Finance.
+Thanks in advance.","[""Brooks"", ""Sameer"", ""Prakash Kulkarni""]"
+8874038,"Bhavna Chopra,
+
+Thoda urgent hai. kal Rekha C. aur Lokesh ke saath meeting hai Kalam meeting room mein. Is deal ki vijay pakki hai, Vijay ne confirm kiya. Grant Thornton ka payment abhi tak nahi aaya.
+Thanks,
+Venkatesh, MBBS
+Principal Consultant | Lupin","[""Bhavna Chopra"", ""Rekha C."", ""Lokesh"", ""Vijay"", ""Venkatesh""]"
+0034254,"FYI - The budget of $1.8M has been sanctioned. Quick update: I spoke to Harish Bhatia yesterday and the numbers for Project Aurora look fine. Quick update: Please find the attached report for your review. Also, As discussed with Dmitri Volkov over call, pls share the UAT sign off. Please treat this as urgent.","[""Harish Bhatia"", ""Dmitri Volkov""]"
+0836880,"Anirban ji, Also, The budget of EUR 3,100 has been sanctioned. FYI - Linda Green - yes, the same Linda who led Project Aurora - will be the new delivery head.
+
+Rgds, Aparna
+CTO | Papa John's","[""Anirban"", ""Linda Green"", ""Aparna""]"
+2285704,"Hi folks, Miles is ahead of the plan. The deadline has been moved to 1st Dec. rgds
+Kavya Gupta
+Sent from my iPhone","[""Miles"", ""Kavya Gupta""]"
+2257997,"The Aryabhata room is booked under Siddharth Rathore's name. One more thing: Signed copies are with Siddharth in the Charles de Gaulle Airport office. Btw, Remember Brooks's law - plan for some buffer. We benchmarked against Shapoorji Pallonji and Deloitte.","[""Siddharth Rathore"", ""Siddharth"", ""Brooks""]"
+3597043,"Hello Ritu and Megan,
+
+The Raman hall is booked under Imran Ghosh's name.
+
+Rgds, Sydney
+
+On Thu, 7 Oct 2026 at 14:59, Anita Rathore wrote:
+> Hello Tanvi,
+>
+> This is a gentle reminder regarding the pending approval.
+>
+> Regards,
+> Anita","[""Ritu"", ""Megan"", ""Sydney"", ""Anita Rathore"", ""Tanvi""]"
+0402011,"Separately, The complaint was filed by a customer named Smita Sethi. Give my regards to Smita. Clearly, Occam's razor does not hold for this dataset.","[""Smita Sethi"", ""Smita""]"
+8583373,"Hii Mei
+
+@Rahul can you take this one?
+Ticket #44641 has been resolved.
+I will circle back once the testing is complete.
+
+Best,
+NN","[""Mei"", ""Rahul""]"
+2593414,"FYI. Anirban and Imran bhai will present the findings in the Kalam meeting room.
+
+On Fri, 5 Nov 2026 at 16:27, Fiona Collins wrote:
+> Dear Naveen,
+>
+> Sharing the minutes from today's call. The complaint was filed by a customer named George MacLeod.
+>
+> Thanks,
+> Fiona","[""Anirban"", ""Imran"", ""Fiona Collins"", ""Naveen"", ""George MacLeod""]"
+8060598,"Dear Madam,
+
+Trivedi ma'am owes me the Project Florence estimates.","[""Trivedi""]"
+8900865,"Chetan sir,
+
+We are still waiting on the final numbers.
+
+Best - Colin, PhD
+c.fitzgerald@northwind.example","[""Colin"", ""Chetan""]"
+5230138,"Respected Pai ji,
+
+between you and me, Col. Cooper is not happy with how सुनीता handled the audit. Durga puja pandal sponsorship of Rs 50,000 is cleared. I will circle back once the testing is complete.
+
+Kind regards,
+May","[""Cooper"", ""सुनीता""]"
+3214457,"Arre Justice Fernandes & Bhavna,
+
+Invoice 16164 is attached for EUR 3,100. Sir, Revathi ka approval pending hai, please dekh lijiye. Anirban Singh chhutti pe hain Martin Luther King Jr. Day tak, tab tak Chetan dekh lenge.
+
+Thanks ji
+Radhika
+Sent from my iPhone","[""Radhika"", ""Anirban Singh""]"
+2991807,"Please see the trail below. Let me know if you need anything else. Thanks & Regards
+Padmini Sharma
+Sent from my iPhone
+
+-----Original Message-----
+From: Neha Krishnan
+Sent: Thu, 7 Sep 2026 at 15:51
+To: Henry Foster
+Subject: RE: Invoice 7864
+
+Hello Henry,
+
+The deadline has been moved to Friday. We are still waiting on the final numbers. The Newton cabin is booked under R. Arora's name.
+
+Thanks,
+Neha","[""Padmini Sharma"", ""Neha Krishnan"", ""Henry Foster"", ""Henry"", ""R. Arora""]"
